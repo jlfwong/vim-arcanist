@@ -10,11 +10,24 @@ and vim.
 
 COMMANDS                                        *arcanist-commands*
 
+:Arc [args]             Run an arbitrary arc command. Just runs
+                        :!arc [args]. Won't work properly for
+                        commands that require an editor to be brought up, like
+                        arc diff. When running in GUI vim, --no-ansi will be
+                        passed to arc to suppress the ansi color codes that
+                        GUI vim doesn't support.
+
+                        :Arc which          Run :!arc which
+                        :Arc patch D433     Run :!arc patch D443
+
                                                 *arcanist-:ArcInlines*
 :ArcInlines [{revid}]   Run arc inlines and open the results in a quickfix
                         buffer. Navigate between errors with |:cnext| and
-                        |:cprev|. If {revid} is passed, then run 
-                        arc inlines --revision {revid}. e.g. :ArcInlines D334
+                        |:cprev|. If {revid} is passed, then run
+                        arc inlines --revision {revid}.
+
+                        :ArcInlines         Shows inlines for current diff
+                        :ArcInlines D334    Shows inlines for D334
 
 ABOUT
 

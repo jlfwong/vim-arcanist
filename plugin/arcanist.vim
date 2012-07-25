@@ -23,9 +23,22 @@ endfunction
 
 function! s:arc_command(...) abort
   let cmd = g:arcanist_executable
+  if has("gui_running")
+    let cmd .= " --no-ansi"
+  endif
   let cmd .= ' ' . join(map(copy(a:000), 's:shellesc(v:val)'), ' ')
   return cmd
 endfunction
+
+" Arc {{{1
+function! s:Arc(cmd) abort
+  execute "!" . s:arc_command() . " " . a:cmd
+endfunction
+
+command! -nargs=* Arc call s:Arc(<q-args>)
+" }}}1
+
+" ArcInlines {{{1
 
 function! s:Inlines(...) abort
   " Given 0 arguments, just run arc inlines
@@ -47,3 +60,4 @@ function! s:Inlines(...) abort
 endfunction
 
 command! -nargs=? ArcInlines call s:Inlines(<f-args>)
+" }}}1
