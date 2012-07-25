@@ -1,0 +1,25 @@
+*arcanist.txt* A wrapper around arcanist
+
+Author:  Jamie Wong <http://jamie-wong.com/>
+License: Same terms as Vim itself (see |license|)
+
+INTRODUCTION                                    *arcanist*
+
+Serves as a link between arcanist <https://github.com/facebook/arcanist>
+and vim.
+
+COMMANDS                                        *arcanist-commands*
+
+                                                *arcanist-:ArcInlines*
+:ArcInlines [{revid}]   Run arc inlines and open the results in a quickfix
+                        buffer. Navigate between errors with |:cnext| and
+                        |:cprev|. If {revid} is passed, then run 
+                        arc inlines --revision {revid}. e.g. :ArcInlines D334
+
+ABOUT
+
+Grab the latest version or report a bug on GitHub:
+
+http://github.com/phleet/vim-arcanist
+
+ vim:tw=78:et:ft=help:norl:
