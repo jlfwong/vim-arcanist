@@ -18,12 +18,10 @@ For vundle, install by adding
 
     Bundle 'phleet/vim-arcanist'
 
-then running `:BundleInstall` inside of vim.
-
-to your `.vimrc`.
+to your `.vimrc` and running `:BundleInstall` inside of vim.
 
 Once help tags have been generated, you can view the manual with
-`:help fugitive`.
+`:help arcanist`.
 
 License
 -------
