@@ -3,6 +3,10 @@ arcanist.vim
 
 Simple wrapper around arcanist for vim. Mostly useful for `:ArcInlines`.
 
+`arc inlines` lists all of the inline comments for the current associated Differential revision.
+
+`:ArcInlines` takes that list and shoves it into the quickfix buffer for quick navigation with `:cnext` and `:cprev`.
+
 ![vim-arcanist animated demo](http://i.imgur.com/Jyc9k.gif)
 
 ### [(Blurry) Screencast](https://vimeo.com/46753425)
