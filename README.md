@@ -11,6 +11,23 @@ Simple wrapper around arcanist for vim. Mostly useful for `:ArcInlines`.
 
 ### [(Blurry) Screencast](https://vimeo.com/46753425)
 
+Less Animated Explanation
+-------------------------
+
+If this is what you see in Phabricator:
+
+![vim-arcanist-0](http://i.imgur.com/EIddn.png)
+
+Then this is what you'll see when you run `arc inlines`.
+
+![vim-arcanist-1](http://i.imgur.com/BL8IF.png)
+
+And this is what you'll see when you run `:ArcInlines` inside of vim.
+
+![vim-arcanist-2](http://i.imgur.com/XH0rL.png)
+
+Which you can then navigate using all the normal quickfix navigation commands. `:help quickfix`, `:help :cn`, `:help :cp`.
+
 Installation
 ------------
 
