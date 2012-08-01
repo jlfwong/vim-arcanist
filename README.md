@@ -3,6 +3,10 @@ arcanist.vim
 
 Simple wrapper around arcanist for vim. Mostly useful for `:ArcInlines`.
 
+![vim-arcanist animated demo](http://i.imgur.com/Jyc9k.gif)
+
+### [(Blurry) Screencast](https://vimeo.com/46753425)
+
 Installation
 ------------
 
