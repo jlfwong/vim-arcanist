@@ -1,6 +1,8 @@
 arcanist.vim
 ============
 
+**This is out of order, because the arc inlines commands is gone. This renders this repository pretttty much useless :(**
+
 Simple wrapper around arcanist for vim. Mostly useful for `:ArcInlines`.
 
 `arc inlines` lists all of the inline comments for the current associated Differential revision.
